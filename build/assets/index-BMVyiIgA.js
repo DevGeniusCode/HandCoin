@@ -7704,7 +7704,7 @@ const Mh = Eu`
         return Qe.useEffect(() => {
             (async () => {
                 try {
-                    const A = await (await fetch("handshake.json")).json();
+                    const A = await (await fetch("/handshake.json")).json();
                     Array.isArray(A) ? p(A.map(T => T.replace(/rgb\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)/g, F => I[F] || F))) : console.error("Data from Handshake.json is not an array")
                 } catch (B) {
                     console.error("Error fetching ascii art:", B)
