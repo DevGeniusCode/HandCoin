@@ -11,7 +11,7 @@ const SocialButtons = () => {
         },
         {
             name: 'Twitter',
-            url: 'https://twitter.com/HandCoin', // Dummy URL
+            url: 'https://x.com/mojangtunggara',
             icon: 'fab fa-twitter', // Font Awesome icon
             // color: '#1DA1F2'
         },

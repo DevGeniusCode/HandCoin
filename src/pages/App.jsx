@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react';
 import '../styles/stylesheet.css'
-import Hero from '../components/Hero';
+import Hero from '../components/Hero.jsx';
 import About from '../components/About.jsx';
-import SocialButtons from '../components/SocialButtons';
-import MatrixBackground from '../components/MatrixBackground';
-import Loader from '../components/Loader';
-import Footer from '../components/Footer';
+import SocialButtons from '../components/SocialButtons.jsx';
+import MatrixBackground from '../components/MatrixBackground.jsx';
+import Loader from '../components/Loader.jsx';
+import Footer from '../components/Footer.jsx';
 
 function App() {
      const [isLoading, setIsLoading] = useState(true);
