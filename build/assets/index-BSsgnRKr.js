@@ -67,7 +67,7 @@ Error generating stack: `+u.message+`
        width: 100%;
     }
 
-`,Uh=()=>we.jsx(Ah,{children:we.jsxs($h,{children:["They say money can’t buy love, ",we.jsx("br",{className:"desktop-only"})," but HANDCOIN will definitely keep your hands busy.",we.jsx(Fh,{})]})}),Bh=()=>{const i=[{name:"Telegram",url:"https://t.me/HandCoinPortal",icon:"fab fa-telegram"},{name:"Twitter",url:"https://twitter.com/HandCoin",icon:"fab fa-twitter"},{name:"Facebook",url:"https://facebook.com/HandCoin",icon:"fab fa-facebook"},{name:"Instagram",url:"https://instagram.com/HandCoin",icon:"fab fa-instagram"}];return we.jsx("div",{className:"social-buttons",children:i.map((a,s)=>we.jsxs("a",{href:a.url,target:"_blank",rel:"noopener noreferrer",className:"social-button",style:{backgroundColor:a.color},children:[we.jsx("i",{className:a.icon}),a.name]},s))})},Hh=_t.canvas`
+`,Uh=()=>we.jsx(Ah,{children:we.jsxs($h,{children:["They say money can’t buy love, ",we.jsx("br",{className:"desktop-only"})," but HANDCOIN will definitely keep your hands busy.",we.jsx(Fh,{})]})}),Bh=()=>{const i=[{name:"Telegram",url:"https://t.me/HandCoinPortal",icon:"fab fa-telegram"},{name:"Twitter",url:"https://x.com/mojangtunggara",icon:"fab fa-twitter"},{name:"Facebook",url:"https://facebook.com/HandCoin",icon:"fab fa-facebook"},{name:"Instagram",url:"https://instagram.com/HandCoin",icon:"fab fa-instagram"}];return we.jsx("div",{className:"social-buttons",children:i.map((a,s)=>we.jsxs("a",{href:a.url,target:"_blank",rel:"noopener noreferrer",className:"social-button",style:{backgroundColor:a.color},children:[we.jsx("i",{className:a.icon}),a.name]},s))})},Hh=_t.canvas`
     position: fixed;
     top: 0;
     left: 0;

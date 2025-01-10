@@ -20,7 +20,7 @@ function App() {
         <div className="app">
             <MatrixBackground/>
             {/*<Loader gifUrl="/loading.gif" loadingText="Loading..." isLoading={isLoading}/>*/}
-            <Loader isLoading={isLoading}/>
+            {/*<Loader isLoading={isLoading}/>*/}
             <Hero/>
             <SocialButtons/>
             <About/>
