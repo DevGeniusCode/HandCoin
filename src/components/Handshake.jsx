@@ -137,7 +137,7 @@ const AnimatedHandshake = () => {
     useEffect(() => {
         const fetchArt = async () => {
             try {
-                const response = await fetch('/handshake.json');
+                const response = await fetch('handshake.json');
                 const data = await response.json();
                 if (Array.isArray(data)) {
            setFrames(data.map(line => line.replace(/rgb\(\s*\d+\s*,\s*\d+\s*,\s*\d+\s*\)/g, (match) => colors[match] || match)));
