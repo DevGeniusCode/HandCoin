@@ -6,6 +6,7 @@ import SocialButtons from '../components/SocialButtons.jsx';
 import MatrixBackground from '../components/MatrixBackground.jsx';
 import Loader from '../components/Loader.jsx';
 import Footer from '../components/Footer.jsx';
+import {SpeedInsights} from "@vercel/speed-insights/react";
 
 function App() {
      const [isLoading, setIsLoading] = useState(true);
@@ -18,6 +19,8 @@ function App() {
 
     return (
         <div className="app">
+            <SpeedInsights />
+
             <MatrixBackground/>
             {/*<Loader gifUrl="/loading.gif" loadingText="Loading..." isLoading={isLoading}/>*/}
             {/*<Loader isLoading={isLoading}/>*/}
