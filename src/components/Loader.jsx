@@ -78,22 +78,21 @@ const ImageContainer = styled.div`
 
 
 const GifImage = styled.img`
-  width: 200px;
-  height: 200px;
+
 `;
 
-const LoaderImage = ({ gifUrl, loadingText, isLoading }) => {
+const Loader = ({ gifUrl, loadingText, isLoading }) => {
     return (
         <LoaderContainer className={isLoading ? '' : 'hidden'}>
             <ImageContainer>
-                <GifImage src={gifUrl} alt="Loading..." />
+                <GifImage src={gifUrl} alt="HANDCOIN" />
                 <LoadingText> {loadingText}</LoadingText>
             </ImageContainer>
         </LoaderContainer>
     );
 };
 
-const Loader = ({ isLoading }) => {
+const LoaderImage = ({ isLoading }) => {
     return (
         <LoaderContainer className={isLoading ? '' : 'hidden'}>
             <AnimatedHandshake/>

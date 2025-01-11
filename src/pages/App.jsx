@@ -22,7 +22,7 @@ function App() {
             <SpeedInsights />
 
             <MatrixBackground/>
-            {/*<Loader gifUrl="/loading.gif" loadingText="Loading..." isLoading={isLoading}/>*/}
+            <Loader gifUrl="public/handshake.gif" loadingText="HANDCOIN" isLoading={isLoading}/>
             {/*<Loader isLoading={isLoading}/>*/}
             <Hero/>
             <SocialButtons/>
