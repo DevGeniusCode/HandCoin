@@ -5,14 +5,14 @@ const SocialButtons = () => {
         {
             name: 'Telegram',
             url: 'https://t.me/HandCoinPortal',
-            icon: 'fab fa-telegram', // Font Awesome icon
+            icon: 'fa-brands fa-telegram', // Font Awesome icon
             // color: '#229ED9'
 
         },
         {
             name: 'Twitter',
             url: 'https://x.com/HandCoinToken',
-            icon: 'fab fa-x-twitter', // Font Awesome icon
+            icon: 'fa-brands fa-x-twitter', // Font Awesome icon
             // color: '#1DA1F2'
         },
         {
