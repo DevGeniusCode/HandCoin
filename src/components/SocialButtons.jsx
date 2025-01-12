@@ -21,7 +21,6 @@ const SocialButtons = () => {
             name: 'DEX Screener',
             url: 'https://dexscreener.com/solana/EWVXLh4zbdTWhLnVbXpyLQrrRa5Qg67amTqbJ95ynsmH',
             icon: '/dexscreener.svg',
-            disabled: true
         }
     ];
 
