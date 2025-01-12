@@ -43,7 +43,7 @@ const QRCodeDisplay = () => {
 
     useEffect(() => {
         qrCode.update({
-            data: 'https://pump.fun/coin/HandCoin'
+            data: 'https://pump.fun/coin/Azkg3WnHHWqwhfZGAcfyvRgEc3ikbXcmxy7obAbEpump'
         });
     }, []);
 

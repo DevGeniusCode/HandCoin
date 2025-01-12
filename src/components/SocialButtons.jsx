@@ -14,12 +14,12 @@ const SocialButtons = () => {
         },
         {
             name: 'Pump.fun',
-            url: 'https://pump.fun/coin/HandCoin',
+            url: 'https://pump.fun/coin/Azkg3WnHHWqwhfZGAcfyvRgEc3ikbXcmxy7obAbEpump',
             icon: '/pumpfun.svg',
         },
         {
             name: 'DEX Screener',
-            url: 'https://dexscreener.com/solana/token/HandCoin',
+            url: 'https://dexscreener.com/solana/EWVXLh4zbdTWhLnVbXpyLQrrRa5Qg67amTqbJ95ynsmH',
             icon: '/dexscreener.svg',
             disabled: true
         }
