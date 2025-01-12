@@ -21,6 +21,7 @@ const SocialButtons = () => {
             name: 'DEX Screener',
             url: 'https://dexscreener.com/solana/token/HandCoin',
             icon: '/dexscreener.svg',
+            disabled: true
         }
     ];
 
@@ -29,10 +30,11 @@ const SocialButtons = () => {
             {socialLinks.map((social, index) => (
                 <a
                     key={index}
-                    href={social.url}
+                    href={social.disabled ? null : social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="social-button"
+                    className={`social-button ${social.disabled ? 'disabled' : ''}`}
+                   style={{pointerEvents: social.disabled ? 'none' : 'auto'}}
                    >
                     <img src={social.icon} alt={social.name} style={{height: '20px', width: '20px'}} />
                     {social.name}

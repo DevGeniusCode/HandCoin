@@ -25,7 +25,7 @@ function App() {
             <MatrixBackground/>
             <Loader gifUrl="/handCoin.gif" loadingText="HANDCOIN" isLoading={isLoading}/>
             <Hero/>
-            <QRCodeDisplay/>
+            {/*<QRCodeDisplay/>*/}
             <SocialButtons/>
             <About/>
             <Footer/>
