@@ -1,5 +1,5 @@
-import React from 'react';
-import QRCode from 'react-qr-code';
+import React, {useEffect, useRef} from "react";
+import QRCodeStyling from "qr-code-styling";
 import styled from 'styled-components';
 
 const QRCodeContainer = styled.div`
@@ -16,14 +16,44 @@ const QRCodeTitle = styled.h3`
 
 
 const QRCodeDisplay = () => {
-    const linkToEncode = 'https://pump.fun/coin/HandCoin';
+    const qrCodeRef = useRef(null);
+    const qrCode = new QRCodeStyling({
+        width: 300,
+        height: 300,
+        image:
+            '/public/pumpfun.svg',
+        dotsOptions: {
+            color: "#00ff00",
+            type: "rounded"
+        },
+        backgroundOptions: {
+            color: '#2b2b2b',
+            borderRadius: 10
+        },
+        imageOptions: {
+            crossOrigin: "anonymous",
+            margin: 20
+        }
+    });
+
+
+    useEffect(() => {
+        qrCode.append(qrCodeRef.current);
+    }, []);
+
+    useEffect(() => {
+        qrCode.update({
+            data: 'https://pump.fun/coin/HandCoin'
+        });
+    }, []);
 
     return (
         <QRCodeContainer>
             <QRCodeTitle>Scan to Buy</QRCodeTitle>
-            <QRCode value={linkToEncode} size={256}  level="H" fgColor={'#00ff00'}/>
+            <div ref={qrCodeRef}/>
         </QRCodeContainer>
     );
 };
+
 
 export default QRCodeDisplay;
