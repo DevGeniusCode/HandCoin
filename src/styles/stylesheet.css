@@ -41,7 +41,7 @@ body {
     0 0 10px #00ff00,
     0 0 15px #00ff00;
     animation: flicker 1.5s ease-in-out infinite;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 
 }
 
