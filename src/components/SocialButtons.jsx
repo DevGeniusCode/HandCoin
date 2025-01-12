@@ -5,28 +5,23 @@ const SocialButtons = () => {
         {
             name: 'Telegram',
             url: 'https://t.me/HandCoinPortal',
-            icon: 'fa-brands fa-telegram', // Font Awesome icon
-            // color: '#229ED9'
-
+            icon: '/telegram.svg',
         },
         {
             name: 'Twitter',
             url: 'https://x.com/HandCoinToken',
-            icon: 'fa-brands fa-x-twitter', // Font Awesome icon
-            // color: '#1DA1F2'
+            icon: '/x-twitter.svg',
         },
         {
-            name: 'Facebook',
-            url: 'https://facebook.com/HandCoin',
-            icon: 'fab fa-facebook', // Font Awesome icon
-            // color: '#1877F2'
+            name: 'Pump.fun',
+            url: 'https://pump.fun/coin/HandCoin',
+            icon: '/pumpfun.svg',
         },
         {
-            name: 'Instagram',
-            url: 'https://instagram.com/HandCoin',
-            icon: 'fab fa-instagram', // Font Awesome icon
-            // color: '#E4405F'
-        },
+            name: 'DEX Screener',
+            url: 'https://dexscreener.com/solana/token/HandCoin',
+            icon: '/dexscreener.svg',
+        }
     ];
 
     return (
@@ -38,9 +33,8 @@ const SocialButtons = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-button"
-                    style={{ backgroundColor: social.color}}
-                >
-                    <i className={social.icon}></i>
+                   >
+                    <img src={social.icon} alt={social.name} style={{height: '20px', width: '20px'}} />
                     {social.name}
                 </a>
             ))}
