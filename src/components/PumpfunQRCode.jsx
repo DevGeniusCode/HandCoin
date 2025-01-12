@@ -1,22 +1,29 @@
 import React from 'react';
-import QRCode from 'qrcode.react';
+import QRCode from 'react-qr-code';
 import styled from 'styled-components';
 
 const QRCodeContainer = styled.div`
     display: flex;
-    justify-content: center;
-     padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 `;
 
-const PumpfunQRCode = ({ tokenUrl }) => {
-    if (!tokenUrl) {
-        return <p>No Token url was provided.</p>
-    }
+const QRCodeTitle = styled.h3`
+    color: #00ff00;
+    margin-bottom: 10px;
+`;
+
+
+const QRCodeDisplay = () => {
+    const linkToEncode = 'https://pump.fun/coin/HandCoin';
+
     return (
         <QRCodeContainer>
-            <QRCode value={tokenUrl} size={256} level="H"  bgColor={'transparent'} fgColor={'#00ff00'}/>
+            <QRCodeTitle>Scan to Buy</QRCodeTitle>
+            <QRCode value={linkToEncode} size={256}  level="H" fgColor={'#00ff00'}/>
         </QRCodeContainer>
     );
 };
 
-export default PumpfunQRCode;
+export default QRCodeDisplay;

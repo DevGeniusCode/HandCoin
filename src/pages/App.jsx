@@ -7,6 +7,7 @@ import MatrixBackground from '../components/MatrixBackground.jsx';
 import Loader from '../components/Loader.jsx';
 import Footer from '../components/Footer.jsx';
 import {SpeedInsights} from "@vercel/speed-insights/react";
+import QRCodeDisplay from "../components/PumpfunQRCode.jsx";
 
 function App() {
      const [isLoading, setIsLoading] = useState(true);
@@ -23,8 +24,8 @@ function App() {
 
             <MatrixBackground/>
             <Loader gifUrl="/handshake.gif" loadingText="HANDCOIN" isLoading={isLoading}/>
-            {/*<Loader isLoading={isLoading}/>*/}
             <Hero/>
+            <QRCodeDisplay/>
             <SocialButtons/>
             <About/>
             <Footer/>
