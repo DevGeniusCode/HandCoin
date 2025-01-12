@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import AnimatedHandshake from '../components/Handshake';
 
 const fadeIn = keyframes`
   from {
@@ -78,7 +77,13 @@ const ImageContainer = styled.div`
 
 
 const GifImage = styled.img`
-
+  height: auto; 
+  /* Default style: for desktop - original size*/
+    width: auto;
+  @media (max-width: 768px) {
+    /* Style for mobile - 400px width*/
+       width: 400px;
+  }
 `;
 
 const Loader = ({ gifUrl, loadingText, isLoading }) => {
@@ -88,15 +93,6 @@ const Loader = ({ gifUrl, loadingText, isLoading }) => {
                 <GifImage src={gifUrl} alt="HANDCOIN" />
                 <LoadingText> {loadingText}</LoadingText>
             </ImageContainer>
-        </LoaderContainer>
-    );
-};
-
-const LoaderImage = ({ isLoading }) => {
-    return (
-        <LoaderContainer className={isLoading ? '' : 'hidden'}>
-            <AnimatedHandshake/>
-            <LoadingText>HANDCOIN</LoadingText>
         </LoaderContainer>
     );
 };

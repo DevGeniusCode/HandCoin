@@ -9,7 +9,7 @@ const SocialButtons = () => {
         },
         {
             name: 'Twitter',
-            url: 'https://x.com/HandCoinToken',
+            url: 'https://x.com/handcoin7',
             icon: '/x-twitter.svg',
         },
         {
